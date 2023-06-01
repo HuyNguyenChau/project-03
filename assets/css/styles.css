@@ -22,6 +22,7 @@ a {
 }
 /* Nút btn */
 .btn {
+    display: inline-block;
     min-width: 205px;
     line-height: 60px;
     color: #ffffff;
@@ -41,6 +42,7 @@ a {
     min-height: 100vh;
     background-color: var(--primary-color);
 }
+/* ----------------------------Phần Header-top---------------------------- */
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -137,4 +139,74 @@ a {
     border-radius: 22px;
     font-size: 1.6rem;
     line-height: 44px;
+}
+/* ----------------------------Phần Hero---------------------------- */
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+/* -Phần hero content ( phần bên trái hero )- */
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+/* Phần nội dung h1 */
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+/* Phần mô tả dưới h1 */
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+/* Phần row chứa btn và header__phone */
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+/* Phần số phone */
+.hero__phone {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+}
+/* Phần hero__media ( phần bên phải hero ) */
+.hero__media {
+    flex: 1;
+}
+/* Phần chứa 2 ảnh */
+.hero__images {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* Phần ảnh */
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+/* Phần ảnh lớn */
+.hero__img:first-child {
+    /* Thêm position để đc định vị để nằm cao hơn ảnh 2 --> đè lên */
+    position: relative;
+    margin-right: -6px;
+}
+/* Phần ảnh nhỏ */
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    border-radius: 0px 6px 6px 0px;
 }

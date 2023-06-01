@@ -8,3 +8,133 @@ body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
+:root {
+    --primary-color: #10375c;
+}
+/* Common ( dùng chung ) */
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 135px);
+    margin: 0px auto;
+}
+/* Nút btn */
+.btn {
+    min-width: 205px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    background: #2e80ce;
+    border-radius: 30px;
+}
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* -------------------------------------------------Phần Header------------------------------------------------------------- */
+.header {
+    padding-top: 30px;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* -----Phần logo----- */
+.logo {
+    display: inline-flex;
+    align-self: flex-start;
+    gap: 6px;
+    font-size: 1rem;
+}
+/* Phần hình tròn lớn logo */
+.logo__circle {
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: #2e80ce;
+}
+/* Phần hình tròn nhỏ logo */
+.logo__circle::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    right: 0.3em;
+    bottom: 0.3em;
+    background: #ffffff;
+}
+/* -Phần chữ logo- */
+.logo__text {
+    line-height: 1.4em;
+    color: #ffffff;
+}
+/* Phần chữ "shine" logo */
+.logo__brand {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+/* Phần chữ "smile" logo */
+.logo__brand-2 {
+    display: block;
+    text-align: right;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+/* -----Phần Navbar----- */
+.navbar__list {
+    display: flex;
+    gap: 42px;
+}
+/* Phần các items navbar ( thẻ a ) */
+.navbar__link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #c9d2da;
+}
+/* Phần active và hover navbar */
+.navbar__link:hover,
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #ffffff;
+}
+/* Dấu "." trước Home */
+.navbar__link--active::before {
+    position: relative;
+    top: -2px;
+    left: -14px;
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+/* -----Phần btn Log in - Sign up */
+.action {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.action__log-in {
+    font-weight: 300;
+    font-size: 16px;
+    color: #c9d2da;
+}
+.action__sign-up {
+    min-width: 104px;
+    border-radius: 22px;
+    font-size: 1.6rem;
+    line-height: 44px;
+}

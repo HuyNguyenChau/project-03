@@ -383,7 +383,6 @@ a {
     flex-shrink: 0;
 }
 .feature__images {
-    background-color: red;
     position: relative;
     /* Ta dùng padding-bottom cho feature__images để định vị ảnh img-2 bởi bottom: 0px; Nếu ta dùng postion--> top, right...  */
     /* thì sẽ bị đè lên nội dung không va chạm do thuộc tính postion gây vỡ giao diện */
@@ -408,4 +407,77 @@ a {
 /* Phần nút bấm ( nút bên phải ) */
 .feature__cta {
     margin-top: 38px;
+}
+/* -------------------------------------------------------Phần Member------------------------------------------------------ */
+.member__header {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+}
+.member__cta {
+    margin-top: 38px;
+}
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 70px;
+}
+.member-item__img-bg {
+    padding-top: 28px;
+    background: #eaf6ff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.member-item__thumb {
+    /* Tải ảnh phóng to x2 trên figma để ảnh rõ hơn */
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: 0.25s;
+}
+.member-item__thumb:hover {
+    /* transform: scale để thêm hiệu ứng khi chỉ vào ảnh sẽ đc phóng to or thu nhỏ ( mặc định scale(1) nếu <1 nhỏ hoặc >1 to  */
+    transform: scale(1.1);
+}
+.member-item__name {
+    margin-top: 12px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #10375c;
+}
+.member-item__title {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #575f66;
+}
+.member__control {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 38px;
+}
+.member__control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+    background-color: #ffffff;
+    outline: none;
+    color: #575f66;
+    transition: 0.25s;
+}
+.member__control-btn:hover {
+    color: #ffffff;
+    border-color: #2e80ce;
+    background-color: #2e80ce;
+    cursor: pointer;
 }

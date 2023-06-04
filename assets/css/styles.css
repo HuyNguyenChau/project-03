@@ -367,3 +367,45 @@ a {
     line-height: 1.75;
     color: #2e80ce;
 }
+/* ----------------------------------------------------------Phần Feature--------------------------------------------------- */
+.feature {
+    padding: 170px 0px;
+}
+/* Phần feature__row ( tổng trái và phải ) */
+.feature__row {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+/* Phần ảnh ( tổng bên trái ) */
+.feature__media {
+    width: 48.7%;
+    flex-shrink: 0;
+}
+.feature__images {
+    background-color: red;
+    position: relative;
+    /* Ta dùng padding-bottom cho feature__images để định vị ảnh img-2 bởi bottom: 0px; Nếu ta dùng postion--> top, right...  */
+    /* thì sẽ bị đè lên nội dung không va chạm do thuộc tính postion gây vỡ giao diện */
+    padding-bottom: 121px;
+}
+.feature__img {
+    object-fit: cover;
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+}
+.feature__img-2 {
+    position: absolute;
+    object-fit: cover;
+    width: 332px;
+    height: 370px;
+    /* Đã padding phia trên, ko dùng position--> top, bottom, right... để ko bị đè lên do thuộc tính posion vỡ giao diện */
+    right: 0px;
+    bottom: 0px;
+    border-radius: 6px;
+}
+/* Phần nút bấm ( nút bên phải ) */
+.feature__cta {
+    margin-top: 38px;
+}

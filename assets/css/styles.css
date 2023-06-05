@@ -481,3 +481,48 @@ a {
     background-color: #2e80ce;
     cursor: pointer;
 }
+/* --------------------------------------------------------Install----------------------------------------------------------- */
+.install {
+    margin-top: 265px;
+}
+/* Phần tổng install__iner ( gồm trái và phải ) */
+.install__iner {
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2e80ce;
+    border-radius: 4px;
+}
+/* Phần ảnh to ( trái ) */
+.install__img {
+    display: flex;
+    object-fit: cover;
+    margin-top: -95px;
+    width: 284px;
+    height: 522px;
+}
+/* Phần content ( phải ) */
+.install__content {
+    width: 56.9%;
+}
+.install__heading,
+.install__desc {
+    color: #ffffff;
+}
+.install__heading {
+    max-width: 489px;
+}
+/* Phần 2 nút bấm */
+.install__row {
+    display: flex;
+    column-gap: 28px;
+}
+.install__btn {
+    margin-top: 38px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

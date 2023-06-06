@@ -52,6 +52,32 @@ a {
     line-height: 1.67;
     color: #575f66;
 }
+/* Hai nút chevron < > */
+.control {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 38px;
+}
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+    background-color: #ffffff;
+    outline: none;
+    color: #575f66;
+    transition: 0.25s;
+}
+.control-btn:hover {
+    color: #ffffff;
+    border-color: #2e80ce;
+    background-color: #2e80ce;
+    cursor: pointer;
+}
 /* -------------------------------------------------Phần Header------------------------------------------------------------- */
 .header {
     padding-top: 30px;
@@ -456,31 +482,7 @@ a {
     text-align: center;
     color: #575f66;
 }
-.member__control {
-    display: flex;
-    gap: 18px;
-    justify-content: center;
-    margin-top: 38px;
-}
-.member__control-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border: 1px solid #575f66;
-    border-radius: 50%;
-    background-color: #ffffff;
-    outline: none;
-    color: #575f66;
-    transition: 0.25s;
-}
-.member__control-btn:hover {
-    color: #ffffff;
-    border-color: #2e80ce;
-    background-color: #2e80ce;
-    cursor: pointer;
-}
+
 /* --------------------------------------------------------Install----------------------------------------------------------- */
 .install {
     margin-top: 265px;
@@ -525,4 +527,128 @@ a {
     border: none;
     outline: none;
     cursor: pointer;
+}
+/* ------------------------------------------------------Phần Install------------------------------------------------------- */
+.news {
+    margin-top: 170px;
+}
+/* Phần tổng news_inner ( gồm trái và phải ) */
+.news__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* -Phần new__content ( trái )- */
+.news__content {
+    padding-right: 130px;
+    flex-shrink: 0;
+}
+/* Phần h2 của news__content */
+.news__heading {
+    max-width: 470px;
+}
+/* Phần nút btn của news__content */
+.news__more {
+    display: inline-block;
+    margin-top: 28px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #10375c;
+    text-decoration: underline;
+    /* Thuộc tính text-underline-offset để tạo khoảng cách của dấu ____ của text-decoration với chữ */
+    text-underline-offset: 4px;
+}
+/* Phần 2 nút chevron < > của news__content */
+.news-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 28px;
+}
+/* -Phần new__list ( phải )- */
+.news__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+/* Phần các item của new__list */
+.news-item {
+    background: #ffffff;
+    border: 1px solid #e8ebee;
+    border-radius: 12px;
+    transition: 0.25s;
+}
+.news-item:hover {
+    box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
+    border-color: #ffffff;
+}
+/* Phần các ảnh nhỏ trong các news-item */
+.news-item__thumb {
+    object-fit: cover;
+    width: 100%;
+    height: 172px;
+    border-radius: 12px 12px 0px 0px;
+}
+/* Phần body dưới ảnh nhỏ trong news-item */
+.news-item__body {
+    padding: 18px 22px 21px;
+}
+/* Phần tiêu đề h3 trong news-item */
+.news-item__heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #10375c;
+}
+/* Phần mô tả dưới tiêu đề h3 trong news-item */
+.news-item__desc {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #575f66;
+}
+/* Phần "Learn More" trong news-item  */
+.news-item__more {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2e80ce;
+}
+/* --------------------------------------------------------Phần Appointment------------------------------------------------- */
+.appointment {
+    margin-top: 170px;
+}
+.appointment__inner {
+    padding: 100px 0px;
+    background: #f7fbff;
+    text-align: center;
+}
+.appointment__heading {
+    position: relative;
+}
+.appointment__heading::after {
+    position: absolute;
+    bottom: -18px;
+    /* Cách 1 căn giữa */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* Cách 2 căn giữa */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    display: inline-block;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+.appointment__desc {
+    margin: 38px auto;
+    width: 617px;
+    font-size: 1.6rem;
+    line-height: 1.75;
 }
